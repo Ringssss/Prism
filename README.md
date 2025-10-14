@@ -57,3 +57,8 @@ Output JSON: `results_moe_llada_blockwise.json`
 - LLaDA‑1.5: 150–165 tok/s
 - LLaDA‑MoE‑7B‑A1B: 80–100 tok/s (readable path)
 
+
+## Example Result
+- File: results/example_llada8b_sharegpt_bs1.json (H100, bs=1, steps=64, gen=128)
+- Throughput: ~150-160 tok/s
+
