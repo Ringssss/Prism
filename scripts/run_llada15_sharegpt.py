@@ -15,9 +15,9 @@ os.environ.setdefault('USE_EOS_GATING','1')
 os.environ.setdefault('EOS_MIN_STEP','16')
 os.environ.setdefault('TORCH_COMPILE_MODE','reduce-overhead')
 model = os.environ.get('MODEL_PATH','/data/huggingface/LLaDA-1.5')
-cmd = [sys.executable,'-u','../../test_full_optimization.py',
+cmd = [sys.executable,'-u','test_full_optimization.py',
        '--model-path', model,
-       '--dataset','sharegpt','--dataset-path','../datasets/sharegpt.jsonl',
+       '--dataset','sharegpt','--dataset-path','datasets/sharegpt.jsonl',
        '--batch-size','1','--steps','64','--gen-length','128',
        '--out','../results_llada15_sharegpt_bs1.json']
 print('Running:', ' '.join(cmd))
